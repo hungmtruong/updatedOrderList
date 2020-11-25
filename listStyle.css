@@ -129,14 +129,16 @@ tr:nth-child(even) {
 }
 
 .btn-edit {
-    background: #40EF12;
+    background: #28a745;
 }
-
+.btn-reset {
+  background: #ff8000;
+}
 .btn-delete {
     background: #bd2130;
 }
 .btn-submit {
-  background-color: #40EF12;
+  background-color: #28a745;
 }
 
 /* Add a red background color to the cancel button */
