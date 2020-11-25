@@ -57,9 +57,7 @@ body{
 #myTable tr.header{
   background-color: #f1f1f1;
 }
-#myTable tr:hover td{
-  background-color: #989796;
-}
+
 label textarea{
   vertical-align: top;
 }
