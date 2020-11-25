@@ -22,6 +22,15 @@ body{
     display:inline;
 
 }
+
+.div1{
+  margin-left: 200px;
+  margin-right: auto;
+  display: inline-block;
+  width: 800px;
+
+}
+
 #myInput {
   background-image: url('searchicon.png');
   background-position: 155px;
