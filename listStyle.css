@@ -1,33 +1,47 @@
 
 *{
   padding-top: 5px;
-
   margin: 0;
+
    font-family: Raleway, Georgia, 'Times New Roman', Times, serif;
-  box-sizing: border-box;
+
+
+}
+body{
+  margin-left: 360px;
+  margin-right: auto;
+}
+.container {
+	width: 1200px;
+	margin-left: 360px;
+}
+
+.content {
+    padding: 360px 0px;
+    display:inline;
+
 }
 #myInput {
   background-image: url('searchicon.png');
-  background-position: 250px;
+  background-position: 155px;
   background-repeat: no-repeat;
-  width: 15%;
+
   font-size: 16px;
-  padding: 12px 5px 12px 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+
   border: 1px solid #ddd;
   margin-bottom: 12px;
   align: right;
   outline: 0;
+  display: inline-flex;
 }
 
 #myTable {
   margin: auto;
   border-collapse: collapse;
-  width: 75%;
+  width: 1200px;
   border: 1px solid #ddd;
   font-size: 16px;
-
+  overflow:auto;
 }
 
 #myTable th, #myTable td {
@@ -64,8 +78,12 @@ tr:nth-child(even) {
     border: 0;
     color: white;
     text-decoration: none;
-}
 
+}
+.btn-create{
+  margin-left: auto;
+  background: #007bff;
+}
 .btn-push{
   background: #007bff;
 }
@@ -77,9 +95,13 @@ tr:nth-child(even) {
 .btn-delete {
     background: #bd2130;
 }
+.left{
+  margin-left: auto;
+}
 .right{
-  float: right;
-  padding: 10px
+  margin-right: auto;
+
+  display: inline-block;
 }
 .dropdown {
   position: relative;

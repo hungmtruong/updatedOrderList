@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>Create a Custom Order</title>
+    <meta charset = "UTF-8" />
+    <link href="listStyle.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <h1>Custom Order</h1>
+    <form>
+      <fieldset>
+        <legend>Customer Information</legend>
+        <p>
+          <label>First Name:</label>
+          <input type = "text"
+                 id = "name"
+                 value = "Hung" />
+         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name:&nbsp;&nbsp;</label>
+         <input type = "text"
+                id = "name"
+                value = "Truong" />
+        </p>
+        <p>
+          <label>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type = "text"
+                  id = "address"
+                  value = "3326 Long Road Court" />
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City:
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type = "text"
+                  id = "city"
+                  value = "West Sacramento" />
+        </p>
+
+        <p>
+          <label>Zipcode:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type = "text"
+                  id = "zipcode"
+                  value = "95619" />
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State:
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;</label>
+          <input type = "text"
+                  id = "state"
+                  value = "CA" />
+        </p>
+        <p>
+          <label for="textarea">Delivery Instruction:<textarea rows="4" cols="55"
+            style="resize:none">Gate code is 1234</textarea></label>
+
+        </p>
+      </fieldset>
+    </form>
+
+     <fieldset>
+       <legend>Order Information</legend>
+       <form name="myForm" id="myForm" onsubmit="return validateForm()">
+          Item: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QTY<br />
+          <input type="text" id="items" value="Moroccan Pumpkin Stew" />
+          <input type="text" id="qty" value="2" />
+          <input type="button" id="addMore" value="Add More Item" /><br />
+          <input type="text" id="items" value="Japanese Curry & Veggies" />
+          <input type="text" id="qty" value="2" />
+
+      <br/>
+      </form>
+
+     </fieldset>
+
+   <p>
+      <center>
+        <button style="button"><a href="newOrderList.html">Submit</button>
+        <button style="button"><a href="create.html">Reset<a/></button>
+        <button style="button"><a href="index.html">Cancel</a></button>
+      </center>
+     </p>
+  </body>
+  <script>document.getElementById("addMore").onclick = function() {
+    var form = document.getElementById("myForm");
+    var input = document.createElement("input");
+    var input2 = document.createElement("input");
+    input.setAttribute("type", "text");
+    input.setAttribute("placeholder", "Item name");
+    input2.setAttribute("type", "text");
+    input2.setAttribute("placeholder", "Quantity");
+    var br = document.createElement("br");
+    form.appendChild(input);
+    form.appendChild(input2);
+    form.appendChild(br);
+}</script>
+</html>
