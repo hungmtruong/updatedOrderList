@@ -19,3 +19,7 @@ function filterTable() {
     }
   }
 }
+
+function push() {
+  document.getElementById("myTable").deleteRow(1);
+}
