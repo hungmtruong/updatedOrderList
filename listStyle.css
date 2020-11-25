@@ -10,7 +10,7 @@
 body{
   margin-left: 360px;
   margin-right: 360px;
-  display-inline: flex;
+  display: inline-block;
 }
 .container {
 	width: 1200px;
@@ -101,7 +101,8 @@ tr:nth-child(even) {
   margin-left: auto;
 }
 .right{
-  
+
+  margin-left:943px;
   display: inline-block;
 }
 .dropdown {
