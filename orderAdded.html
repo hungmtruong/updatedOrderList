@@ -3,6 +3,9 @@
 <head>
 
 <link rel="stylesheet" href="listStyle.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <title>DHP Internal | List</title>
 </head>
 
@@ -12,10 +15,17 @@
 <h1><center>ORDER LIST<center></h1>
 
   <div class"container content">
-    <a class="btn btn-create" href="create.html" role="button">Create</a>
+    <button type="button" class="btn btn-create">
+			<i class="fa fa-plus"></i>
+			<a href="create.html">New Order</a>
+		</button>
 
-    <div class="right"><input type="text"  id="myInput" onkeyup="filterTable()"
-         placeholder="Search for orders.." title="Type in a order" /></div>
+    <div class="right">
+      <input type="text"  id="myInput" onkeyup="filterTable()"
+         placeholder="Search for orders.." title="Type in a order" />
+      <button type="button" class="btn btn-push">
+        <i class="fas fa-search"></i>
+    </div>
 
     <table id="myTable">
     <tr class="header">
@@ -32,9 +42,22 @@
           Hemly Pink Lady x2</td>
       <td>95619</td>
       <td>
-        <button class="btn btn-push" onClick="push()">Push</button>
-        <a class="btn btn-edit" href="edit.html" role="button">Edit</a>
-        <button id="myBtn" class="btn btn-delete" >Delete</button>
+        <button class="btn btn-push" onClick="push()">
+          <i class="fas fa-arrow-up"></i>
+          <a href=""> Push</a>
+        </button>
+
+        <button type="button" class="btn btn-edit">
+          <i class="fas fa-edit"></i>
+          <a href="edit.html">Edit</a>
+        </button>
+
+
+
+        <button id="myBtn" class="btn btn-delete" >
+          <i class="fas fa-trash"></i>
+          Delete
+        </button>
 
         <!-- The Modal -->
         <div id="myModal" class="verify">
@@ -66,9 +89,20 @@
           Peach & Prociutto x2</td>
       <td>95811</td>
       <td>
-        <button class="btn btn-push" onClick="push()">Push</button>
-        <a class="btn btn-edit" href="edit.html" role="button">Edit</a>
-        <button class="btn btn-delete" onClick="push()">Delete</button>
+        <button class="btn btn-push" onClick="push()">
+          <i class="fas fa-arrow-up"></i>
+          <a href=""> Push</a>
+        </button>
+
+        <button type="button" class="btn btn-edit">
+          <i class="fas fa-edit"></i>
+          <a href="edit.html">Edit</a>
+        </button>
+
+        <button class="btn btn-delete" onClick="push()">
+          <i class="fas fa-trash"></i>
+          Delete
+        </button>
       </td>
     </tr>
     <tr>
@@ -78,9 +112,20 @@
           Japanese Curry & Vegetables x2</td>
       <td>95825</td>
       <td>
-        <button class="btn btn-push" onClick="push()">Push</button>
-        <a class="btn btn-edit" href="edit.html" role="button">Edit</a>
-        <button class="btn btn-delete" onClick="push()">Delete</button>
+        <button class="btn btn-push" onClick="push()">
+          <i class="fas fa-arrow-up"></i>
+          <a href=""> Push</a>
+        </button>
+
+        <button type="button" class="btn btn-edit">
+          <i class="fas fa-edit"></i>
+          <a href="edit.html">Edit</a>
+        </button>
+
+        <button class="btn btn-delete" onClick="push()">
+          <i class="fas fa-trash"></i>
+          Delete
+        </button>
       </td>
     </tr>
     <tr>
@@ -90,9 +135,20 @@
           Peach & Prociutto x2</td>
       <td>95620</td>
       <td>
-        <button class="btn btn-push" onClick="push()">Push</button>
-        <a class="btn btn-edit" href="edit.html" role="button">Edit</a>
-        <button class="btn btn-delete" onClick="push()">Delete</button>
+        <button class="btn btn-push" onClick="push()">
+          <i class="fas fa-arrow-up"></i>
+          <a href=""> Push</a>
+        </button>
+
+        <button type="button" class="btn btn-edit">
+          <i class="fas fa-edit"></i>
+          <a href="edit.html">Edit</a>
+        </button>
+
+        <button class="btn btn-delete" onClick="push()">
+          <i class="fas fa-trash"></i>
+          Delete
+        </button>
       </td>
     </tr>
     <tr>
@@ -101,9 +157,20 @@
       <td>Japanese Curry & Vegetables x4</td>
       <td>95619</td>
       <td>
-        <button class="btn btn-push" onClick="push()">Push</button>
-        <a class="btn btn-edit" href="edit.html" role="button">Edit</a>
-        <button class="btn btn-delete" onClick="push()">Delete</button>
+        <button class="btn btn-push" onClick="push()">
+          <i class="fas fa-arrow-up"></i>
+          <a href=""> Push</a>
+        </button>
+
+        <button type="button" class="btn btn-edit">
+          <i class="fas fa-edit"></i>
+          <a href="edit.html">Edit</a>
+        </button>
+
+        <button class="btn btn-delete" onClick="push()">
+          <i class="fas fa-trash"></i>
+          Delete
+        </button>
       </td>
     </tr>
     <tr>
@@ -113,9 +180,20 @@
         Moroccan Pumpkin Stew x2</td>
       <td>95619</td>
       <td>
-        <button class="btn btn-push" onClick="push()">Push</button>
-        <a class="btn btn-edit" href="edit.html" role="button">Edit</a>
-        <button class="btn btn-delete" onClick="push()">Delete</button>
+        <button class="btn btn-push" onClick="push()">
+          <i class="fas fa-arrow-up"></i>
+          <a href=""> Push</a>
+        </button>
+
+        <button type="button" class="btn btn-edit">
+          <i class="fas fa-edit"></i>
+          <a href="edit.html">Edit</a>
+        </button>
+
+        <button class="btn btn-delete" onClick="push()">
+          <i class="fas fa-trash"></i>
+          Delete
+        </button>
       </td>
     </tr>
 
