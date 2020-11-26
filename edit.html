@@ -8,52 +8,35 @@
 
 
   <body>
-
     <div class="div1">
     <h1>Edit Order</h1>
     <form>
       <fieldset>
         <legend>Customer Information</legend>
-        <p>
-          <label>First Name:</label>
-          <input type = "text"
-                 id = "name"
-                 value = "Duane" />
-         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name:&nbsp;&nbsp;</label>
-         <input type = "text"
-                id = "name"
-                value = "Wilson" />
-        </p>
-        <p>
-          <label>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-          <input type = "text"
-                  id = "address"
-                  value = "3326 Long Road Court" />
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City:
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                 &nbsp;&nbsp;&nbsp;&nbsp;</label>
-          <input type = "text"
-                  id = "city"
-                  value = "West Sacramento" />
-        </p>
+        <div>
+            <form action="/action_page.php">
+              <label for="fname">Full Name</label>
+              <input class="form"type="text" id="fname" name="firstname" placeholder="Your name..">
 
-        <p>
-          <label>Zipcode:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-          <input type = "text"
-                  id = "zipcode"
-                  value = "95619" />
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State:
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                 &nbsp;&nbsp;&nbsp;</label>
-          <input type = "text"
-                  id = "state"
-                  value = "CA" />
-        </p>
-        <p>
-          <label for="textarea">Delivery Instruction:<textarea rows="4" cols="55"
-            style="resize:none">Gate code is 1234</textarea></label>
+              <label for="lname">Email</label>
+              <input class="form"type="text" id="lname" name="lastname" placeholder="i.e. hello@deltahandpies.com">
 
-        </p>
+              <label for="lname">Address</label>
+              <input class="form"type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="lname">City</label>
+              <input class="form"type="text" id="lname" name="lastname" placeholder="i.e. Sacramento">
+
+              <label for="lname">Zipcode</label>
+              <input class="form"type="text" id="lname" name="lastname" placeholder="i.e. 95825">
+
+              <label for="lname">State</label>
+              <input class="form"type="text" id="lname" name="lastname" placeholder="i.e. CA">
+
+
+
+            </form>
+  </div>
       </fieldset>
     </form>
 
@@ -61,16 +44,14 @@
        <legend>Order Information</legend>
        <form name="myForm" id="myForm" onsubmit="return validateForm()">
           Item: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QTY<br />
-          <input type="text" id="items" value="Moroccan Pumpkin Stew" />
-          <input type="text" id="qty" value="2" />
+          <input type="text" id="items" placeholder="i.e. Moroccan Pumpkin Stew" />
+          <input type="text" id="qty" placeholder="i.e 2" />
           <input type="button" id="addMore" value="Add More Item" /><br />
-          <input type="text" id="items" value="Japanese Curry & Veggies" />
-          <input type="text" id="qty" value="2" />
 
       <br/>
       </form>
@@ -80,12 +61,11 @@
    <p>
       <center>
         <a class="btn btn-submit" href="orderAdded.html" role="button">Submit</a>
-        <a class="btn btn-reset" href="edit.html" role="button">Reset</a>
+        <a class="btn btn-reset" href="create.html" role="button">Reset</a>
         <a class="btn btn-cancel" href="index.html" role="button">Cancel</a>
       </center>
      </p>
-
-     </div>
+     <div>
   </body>
   <script>document.getElementById("addMore").onclick = function() {
     var form = document.getElementById("myForm");
