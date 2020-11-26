@@ -79,9 +79,11 @@
     input.setAttribute("placeholder", "Item name");
     input2.setAttribute("type", "text");
     input2.setAttribute("placeholder", "Quantity");
+    var space = document.createTextNode(" ");
     var br = document.createElement("br");
     var br2 = document.createElement("br");
     form.appendChild(input);
+    form.appendChild(space);
     form.appendChild(input2);
     form.appendChild(br);
     form.appendChild(br2);
