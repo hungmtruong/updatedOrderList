@@ -18,20 +18,27 @@
               <label for="fname">Full Name</label>
               <input class="form"type="text" id="fname" name="firstname" placeholder="Your name..">
 
-              <label for="lname">Email</label>
-              <input class="form"type="text" id="lname" name="lastname" placeholder="i.e. hello@deltahandpies.com">
+              <label for="email">Email</label>
+              <input class="form"type="text" id="email" name="email" placeholder="i.e. hello@deltahandpies.com">
 
-              <label for="lname">Address</label>
-              <input class="form"type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="adrs">Address</label>
+              <input class="form"type="text" id="adrs" name="address" placeholder="Your last name..">
 
-              <label for="lname">City</label>
-              <input class="form"type="text" id="lname" name="lastname" placeholder="i.e. Sacramento">
+              <label for="city">City</label>
+              <input class="form"type="text" id="city" name="city" placeholder="i.e. Sacramento">
 
-              <label for="lname">Zipcode</label>
-              <input class="form"type="text" id="lname" name="lastname" placeholder="i.e. 95825">
+              <label for="zip">Zipcode</label>
+              <input class="form"type="text" id="zip" name="zipcode" placeholder="i.e. 95825">
 
-              <label for="lname">State</label>
-              <input class="form"type="text" id="lname" name="lastname" placeholder="i.e. CA">
+              <label for="state">State</label>
+              <input class="form"type="text" id="state" name="state" placeholder="i.e. CA">
+
+              <label class="textarea">Delivery Instructions</label><br>
+              <textarea rows="2" cols="104"
+                style="resize:none">i.e Gate code is 123</textarea>
+
+
+
 
 
 
@@ -49,9 +56,10 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QTY<br />
-          <input type="text" id="items" placeholder="i.e. Moroccan Pumpkin Stew" />
-          <input type="text" id="qty" placeholder="i.e 2" />
+          <input type="text" id="items" placeholder="Item name" />
+          <input type="text" id="qty" placeholder="Quantity" />
           <input type="button" id="addMore" value="Add More Item" /><br />
+
 
       <br/>
       </form>
@@ -76,8 +84,10 @@
     input2.setAttribute("type", "text");
     input2.setAttribute("placeholder", "Quantity");
     var br = document.createElement("br");
+    var br2 = document.createElement("br");
     form.appendChild(input);
     form.appendChild(input2);
     form.appendChild(br);
+    form.appendChild(br2);
 }</script>
 </html>

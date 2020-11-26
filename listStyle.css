@@ -66,8 +66,18 @@ body{
   background-color: #f1f1f1;
 }
 
-label textarea{
-  vertical-align: top;
+textarea{
+
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: gray;
+}
+textarea:focus{
+  background-color: lightblue;
 }
 td, th {
   border: 1px solid #dddddd;
@@ -227,6 +237,9 @@ input.form[type=submit]:hover {
   background-color: white;
 }
 
+.addMoreField{
+
+}
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
   width: 100%;

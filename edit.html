@@ -16,27 +16,31 @@
         <div>
             <form action="/action_page.php">
               <label for="fname">Full Name</label>
-              <input class="form"type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input class="form"type="text" id="fname" name="fullname" value="Duane Wilson">
 
               <label for="lname">Email</label>
-              <input class="form"type="text" id="lname" name="lastname" placeholder="i.e. hello@deltahandpies.com">
+              <input class="form"type="text" id="lname" name="email" value="hello@deltahandpies.com">
 
               <label for="lname">Address</label>
-              <input class="form"type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <input class="form"type="text" id="lname" name="address" value="3326 Long Road Court">
 
               <label for="lname">City</label>
-              <input class="form"type="text" id="lname" name="lastname" placeholder="i.e. Sacramento">
+              <input class="form"type="text" id="lname" name="Sacramento" value="Sacramento">
 
               <label for="lname">Zipcode</label>
-              <input class="form"type="text" id="lname" name="lastname" placeholder="i.e. 95825">
+              <input class="form"type="text" id="lname" name="zipcode" value="95825">
 
               <label for="lname">State</label>
-              <input class="form"type="text" id="lname" name="lastname" placeholder="i.e. CA">
+              <input class="form"type="text" id="lname" name="state" value="CA">
+
+              <label class="textarea">Delivery Instructions</label><br>
+              <textarea rows="2" cols="104"
+                style="resize:none">Gate code is 123</textarea>
 
 
 
             </form>
-  </div>
+</div>
       </fieldset>
     </form>
 
@@ -44,13 +48,13 @@
        <legend>Order Information</legend>
        <form name="myForm" id="myForm" onsubmit="return validateForm()">
           Item: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QTY<br />
-          <input type="text" id="items" placeholder="i.e. Moroccan Pumpkin Stew" />
-          <input type="text" id="qty" placeholder="i.e 2" />
+          <input type="text" id="items" placeholder="Item name" />
+          <input type="text" id="qty" placeholder="Quantity" />
           <input type="button" id="addMore" value="Add More Item" /><br />
 
       <br/>
@@ -76,8 +80,10 @@
     input2.setAttribute("type", "text");
     input2.setAttribute("placeholder", "Quantity");
     var br = document.createElement("br");
+    var br2 = document.createElement("br");
     form.appendChild(input);
     form.appendChild(input2);
     form.appendChild(br);
+    form.appendChild(br2);
 }</script>
 </html>
