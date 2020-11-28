@@ -8,7 +8,24 @@
 
 
   <body>
-    <div class="div1">
+      <header>
+        <nav>
+        <div class="container">
+          <div class="nav-brand">
+            <img src="logo.png"alt="">
+            <h2>Delta Hand Pies</h2>
+            </div>
+              <ul>
+              <li ><a href="https://hungmtruong.github.io/updatedOrderList/" >List</a></li>
+              <li><a href="https://nhatdoan1991.github.io/">Queue</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="login.html">Logout</a></li>
+            </ul>
+        </div>
+        </nav>
+      </header>
+
+      <div class="bodyContainer">
     <h1>Edit Order</h1>
     <form>
       <fieldset>
@@ -44,6 +61,7 @@
       </fieldset>
     </form>
 
+
      <fieldset>
        <legend>Order Information</legend>
        <form name="myForm" id="myForm" onsubmit="return validateForm()">
@@ -64,12 +82,13 @@
 
    <p>
       <center>
+        <br>
         <a class="btn btn-submit" href="orderAdded.html" role="button">Submit</a>
         <a class="btn btn-reset" href="create.html" role="button">Reset</a>
         <a class="btn btn-cancel" href="index.html" role="button">Cancel</a>
       </center>
      </p>
-     <div>
+     </div>
   </body>
   <script>document.getElementById("addMore").onclick = function() {
     var form = document.getElementById("myForm");
