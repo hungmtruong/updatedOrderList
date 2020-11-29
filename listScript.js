@@ -26,8 +26,9 @@ function filterTable() {
   }
 }
 
-function push() {
-  document.getElementById("myTable").deleteRow(1);
+function push(r) {
+  var i = r.parentNode.parentNode.rowIndex;
+  document.getElementById("myTable").deleteRow(i);
 }
 
 
