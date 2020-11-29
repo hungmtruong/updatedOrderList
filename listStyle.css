@@ -2,9 +2,8 @@
 *{
 
   margin: 0;
-
-   font-family: Raleway, Georgia, 'Times New Roman', Times, serif;
-   font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  
 
 }
 a{
@@ -334,6 +333,9 @@ input.form[type=submit]:hover {
   outline: none;
 }
 
+input[type="button"]{
+  font-size:15px
+}
 /* Set a style for the submit/login button */
 
 
