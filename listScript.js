@@ -29,6 +29,7 @@ function filterTable() {
 function push(r) {
   var i = r.parentNode.parentNode.rowIndex;
   document.getElementById("myTable").deleteRow(i);
+
 }
 
 
